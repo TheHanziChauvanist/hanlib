@@ -6,6 +6,7 @@ Transcribed by 武克富強 (Võ Khắc Phú Cường)
 
 ---
 人影
+Man's Shadow
 
 新月初上。
 The new moon had just risen.
