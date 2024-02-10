@@ -20,7 +20,7 @@ The boy did not dare to look back.
 急入告姊。
 Hurriedly he entered (the house),(and) told (his) elder sister.
 
-姊曰。此汝身之影也。
+姊曰。此{a:汝身之影}也。
 (His) sister said, "It (is) the shadow of your body.
 
 汝立燈前。行日下。皆有影。
@@ -32,3 +32,6 @@ How is it that you forget it?"
 兒乃悟。
 The boy then  understood.
 
+---
+
+# a
