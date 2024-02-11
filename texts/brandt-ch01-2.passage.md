@@ -24,7 +24,7 @@ Hurriedly he entered (the house), (and) told (his) elder sister.
 姊曰。此{a:汝身之影}也。
 (His) sister said, "It (is) the shadow of your body.
 
-汝立燈前。行日下。皆有影。
+汝立燈前。行日下。{b:皆有影}。
 
 (When) you are standing before a lamp, (or) going under the sun, there always is a shadow.
 
@@ -38,4 +38,8 @@ The boy then understood.
 
 # a
 
-here 之 is a sign of the possessive case: "the shadow of your body".
+Here 之 is a sign of the possessive case: "the shadow of your body".
+
+# b
+Here 皆 is used as an equalizing part which
+indicates that a quality, a ??? or an action relates to two or several objects to the same extent.
