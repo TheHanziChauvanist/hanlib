@@ -1,8 +1,8 @@
 # Introduction to Literary Chinese - Lesson 1, Text 2
 
-Adapted from the 1927 book by J. Brandt
+<center>Adapted from the 1927 book by J. Brandt</center>
 
-Transcribed by 武克富強 (Võ Khắc Phú Cường)
+<center>Transcribed by 武克富強 (Võ Khắc Phú Cường)</center>
 
 ---
 
@@ -25,7 +25,6 @@ Hurriedly he entered (the house), (and) told (his) elder sister.
 (His) sister said, "It (is) the shadow of your body.
 
 汝立燈前。行日下。{b:皆有影}。
-
 (When) you are standing before a lamp, (or) going under the sun, there always is a shadow.
 
 何忘之耶。
@@ -42,8 +41,7 @@ Here 之 is a sign of the possessive case: "the shadow of your body".
 
 # b
 
-Here 皆 is used as an equalizing part which
-indicates that a quality, a ??? or an action relates to two or several objects to the same extent.
+Here 皆 is used as an equalizing part which indicates that a quality, a state or an action relates to two or several objects to the same extent.
 
 **Similar examples**.
 - `人人皆知` All men know that.
@@ -52,7 +50,7 @@ indicates that a quality, a ??? or an action relates to two or several objects t
 
 # c
 
-Here is used as a consequential particle
+Here 乃 is used as a consequential particle.
 
 **Similar examples**.
 - `乃可` It will then do.
