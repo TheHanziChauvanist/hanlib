@@ -31,7 +31,7 @@ Hurriedly he entered (the house), (and) told (his) elder sister.
 何忘之耶。
 How is it that you forget it?"
 
-兒乃悟。
+{c:兒乃悟}。
 The boy then understood.
 
 ---
@@ -48,3 +48,10 @@ indicates that a quality, a ??? or an action relates to two or several objects t
 - `` All men know that.
 - `` Old and young all are there.
 - `` All within the four seas are brothers.
+
+# c
+here is used as a consequential particle
+
+**Similar examples**.
+- `` It will then do.
+- `` Everything then has gone right.
