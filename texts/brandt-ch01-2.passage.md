@@ -43,3 +43,8 @@ Here 之 is a sign of the possessive case: "the shadow of your body".
 # b
 Here 皆 is used as an equalizing part which
 indicates that a quality, a ??? or an action relates to two or several objects to the same extent.
+
+**Similar examples**.
+- `` All men know that.
+- `` Old and young all are there.
+- `` All within the four seas are brothers.
