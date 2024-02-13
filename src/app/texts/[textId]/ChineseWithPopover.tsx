@@ -5,17 +5,22 @@ import {
   FloatingFocusManager,
   FloatingPortal,
 } from "@floating-ui/react";
-import { PassageVocab } from "../Passage";
+import { PassageVocab, VocabEntryPronunciationKey } from "../Passage";
 import { usePopover } from "./Popover";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { textIsPunctuation } from "./punctuation";
 import {
   findEntryMatchingEnKeywords,
   toEnMatchKeyword,
 } from "@/app/lexiconEntryEnKeywords";
+import dynamic from "next/dynamic";
+
+const RubyText = dynamic(() => import("./RubyText").then((r) => r.RubyText), {
+  ssr: false,
+});
 
 export type DisplayOptions = {
-  ruby: null | "en" | "vi" | "jyutping" | "pinyin";
+  ruby: null | VocabEntryPronunciationKey;
   translation: boolean;
 };
 
@@ -48,7 +53,11 @@ export function ChineseWithPopover({
         const entries = vocab[char];
 
         if (!entries?.length) {
-          return <span key={i}>{char}</span>;
+          return (
+            <span key={i} className="font-brush">
+              {char}
+            </span>
+          );
         }
 
         const enGloss = gloss?.[glossIndex]?.replace(/_/g, " ") || null;
@@ -69,6 +78,7 @@ export function ChineseWithPopover({
                   displayOptions.ruby!
                 ]
               : null;
+
         const className = `relative cursor:pointer hover:bg-yellow-400/40`;
         return (
           <span
@@ -87,17 +97,17 @@ export function ChineseWithPopover({
               },
             })}
           >
-            {rubyText ? (
-              <ruby id={id}>
-                {char}
-                <rt className="text-[0.40em] mr-[0.40em]">
-                  {rubyText}
-                  {!soleEntry && !matchingEntry ? "*" : ""}
-                </rt>
-              </ruby>
-            ) : (
-              char
-            )}
+            <ruby>
+              <span className="font-brush">{char}</span>
+              <RubyText
+                enGloss={enGloss}
+                char={char}
+                soleEntry={soleEntry}
+                matchingEntry={matchingEntry || null}
+                displayOptions={displayOptions}
+                firstEntry={entries[0] || null}
+              />
+            </ruby>
           </span>
         );
       })}
@@ -144,7 +154,7 @@ function PopoverDictionaryContent(
 
                 return (
                   <div key={i} className="p-1 rounded">
-                    {[entry.jyutping, entry.pinyin, entry.vi]
+                    {[entry.jyutping, entry.pinyin, entry.kr, entry.vi]
                       .filter((e) => e)
                       .map((e, i, readings) => (
                         <span key={i}>
