@@ -27,8 +27,8 @@ If you know how to make pull requests Git/GitHub, you are welcome to make your c
 ## remaining tasks
 
 ```
-progress: 81 / 4143 tasks complete (~1.9%)
-[=                                                 ]
+progress: 174 / 1384 tasks complete (~12.6%)
+[======                                            ]
 ```
 
 - [x] confirm copyright status of original work (def public domain in US because it was published in 1928) (Feb 9)
@@ -38,7 +38,6 @@ progress: 81 / 4143 tasks complete (~1.9%)
   - [x] build MVP (prototype) using transcribed text
 - [ ] document toolset for transcribing content with help of automation
   - [ ] document free OCR tools to allow collaborators to easily contribute
-  - [ ] document free pinyin transcription tools to allow collaborators to easily contribute
   - [ ] document file formats
 - user interface
   - [x] display text with English translation and gloss (Feb 9)
@@ -48,20 +47,25 @@ progress: 81 / 4143 tasks complete (~1.9%)
   - [x] display correct character readings via gloss, if present
   - [x] enable character definitions for characters first seen in other passages
   - [ ] make build script to aggregate lexicon + make text file to be checked into repo to track changes
+  - [x] use curly quotes in main text
+  - [ ] print formatting
+  - [ ] display compounds in glosses
+- data entry automation
+  - [ ] when generating a new `.vocab.tsv`, account for characters previously met but potentially being used with a new reading in a given passaage
 - Lesson 1, Text 1
   - transcribe content
     - [x] prepare images of Chinese text + English translation for OCR (Feb 9)
     - [x] use OCR on cropped images (Feb 9)
     - [x] proofread OCR results (Feb 9)
-    - [x] transcribe Vocabulary section (Feb 9 Võ Khắc Phú Cường)
+    - [x] transcribe English definitions in Vocabulary section (Feb 9 Võ Khắc Phú Cường)
     - [x] transcribe Notes section (Feb 9 Võ Khắc Phú Cường)
     - [x] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md)) (Feb 9)
     - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv)) (Feb 9)
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [x] get Vietnamese readings for Vocabulary section (Feb 9 Võ Khắc Phú Cường)
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [x] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv` (Feb 9 Võ Khắc Phú Cường)
     - [x] get Cantonese readings for Vocabulary section (Feb 10 R.K. Christenson)
     - [x] align transcribed Chinese + English sentences (Feb 9)
     - [x] write Chinese -> English gloss (Feb 9)
@@ -70,16 +74,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] transcribe English definitions in Vocabulary section (Feb 14 Võ Khắc Phú Cường)
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 1, Text 3
@@ -87,16 +91,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 2, Text 1
@@ -104,16 +108,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 2, Text 2
@@ -121,16 +125,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 2, Text 3
@@ -138,16 +142,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 3, Text 1
@@ -155,16 +159,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 3, Text 2
@@ -172,16 +176,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 3, Text 3
@@ -189,16 +193,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 4, Text 1
@@ -206,16 +210,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 4, Text 2
@@ -223,16 +227,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 4, Text 3
@@ -240,322 +244,322 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
     - [x] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 5, Text 1
   - transcribe content
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] proofread OCR results
+    - [x] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 5, Text 2
   - transcribe content
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] proofread OCR results
+    - [x] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 5, Text 3
   - transcribe content
     - [x] prepare images of Chinese text + English translation for OCR
     - [x] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] proofread OCR results
+    - [x] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 6, Text 1
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
-    - [ ] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] prepare images of Chinese text + English translation for OCR
+    - [x] use OCR on cropped images
+    - [x] proofread OCR results
+    - [x] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 6, Text 2
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
-    - [ ] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] prepare images of Chinese text + English translation for OCR
+    - [x] use OCR on cropped images
+    - [x] proofread OCR results
+    - [x] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 6, Text 3
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
-    - [ ] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] prepare images of Chinese text + English translation for OCR
+    - [x] use OCR on cropped images
+    - [x] proofread OCR results
+    - [x] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 7, Text 1
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
-    - [ ] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] prepare images of Chinese text + English translation for OCR
+    - [x] use OCR on cropped images
+    - [x] proofread OCR results
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 7, Text 2
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
-    - [ ] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] prepare images of Chinese text + English translation for OCR
+    - [x] use OCR on cropped images
+    - [x] proofread OCR results
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 7, Text 3
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
-    - [ ] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] prepare images of Chinese text + English translation for OCR
+    - [x] use OCR on cropped images
+    - [x] proofread OCR results
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 8, Text 1
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
-    - [ ] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] prepare images of Chinese text + English translation for OCR
+    - [x] use OCR on cropped images
+    - [x] proofread OCR results
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 8, Text 2
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
-    - [ ] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] prepare images of Chinese text + English translation for OCR
+    - [x] use OCR on cropped images
+    - [x] proofread OCR results
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 8, Text 3
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
-    - [ ] use OCR on cropped images
-    - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [x] prepare images of Chinese text + English translation for OCR
+    - [x] use OCR on cropped images
+    - [x] proofread OCR results
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
-    - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
-    - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
+    - [x] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
+    - [x] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
-    - [ ] align transcribed Chinese + English sentences
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
+    - [x] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 9, Text 1
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
+    - [x] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 9, Text 2
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
+    - [x] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 9, Text 3
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
+    - [x] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 10, Text 1
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
+    - [x] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 10, Text 2
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
+    - [x] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 10, Text 3
   - transcribe content
-    - [ ] prepare images of Chinese text + English translation for OCR
+    - [x] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 11, Text 1
@@ -563,16 +567,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 11, Text 2
@@ -580,16 +584,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 11, Text 3
@@ -597,16 +601,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 12, Text 1
@@ -614,16 +618,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 12, Text 2
@@ -631,16 +635,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 12, Text 3
@@ -648,16 +652,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 12, Text 4
@@ -665,16 +669,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 13, Text 1
@@ -682,16 +686,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 13, Text 2
@@ -699,16 +703,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 13, Text 3
@@ -716,16 +720,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 13, Text 4
@@ -733,16 +737,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 14, Text 1
@@ -750,16 +754,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 14, Text 2
@@ -767,16 +771,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 14, Text 3
@@ -784,16 +788,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 14, Text 4
@@ -801,16 +805,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 15, Text 1
@@ -818,16 +822,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 15, Text 2
@@ -835,16 +839,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 15, Text 3
@@ -852,16 +856,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 16, Text 1
@@ -869,16 +873,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 16, Text 2
@@ -886,16 +890,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 16, Text 3
@@ -903,16 +907,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 17, Text 1
@@ -920,16 +924,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 17, Text 2
@@ -937,16 +941,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 17, Text 3
@@ -954,16 +958,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 18, Text 1
@@ -971,16 +975,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 18, Text 2
@@ -988,16 +992,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 18, Text 3
@@ -1005,16 +1009,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 19, Text 1
@@ -1022,16 +1026,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 19, Text 2
@@ -1039,16 +1043,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 19, Text 3
@@ -1056,16 +1060,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 20, Text 1
@@ -1073,16 +1077,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 20, Text 2
@@ -1090,16 +1094,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 20, Text 3
@@ -1107,16 +1111,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 21, Text 1
@@ -1124,16 +1128,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 21, Text 2
@@ -1141,16 +1145,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 21, Text 3
@@ -1158,16 +1162,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 22, Text 1
@@ -1175,16 +1179,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 22, Text 2
@@ -1192,16 +1196,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 22, Text 3
@@ -1209,16 +1213,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 23, Text 1
@@ -1226,16 +1230,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 23, Text 2
@@ -1243,16 +1247,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 23, Text 3
@@ -1260,16 +1264,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 24, Text 1
@@ -1277,16 +1281,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 24, Text 2
@@ -1294,16 +1298,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 24, Text 3
@@ -1311,16 +1315,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 25, Text 1
@@ -1328,16 +1332,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 25, Text 2
@@ -1345,16 +1349,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 25, Text 3
@@ -1362,16 +1366,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 26, Text 1
@@ -1379,16 +1383,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 26, Text 2
@@ -1396,16 +1400,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 26, Text 3
@@ -1413,16 +1417,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 27, Text 1
@@ -1430,16 +1434,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 27, Text 2
@@ -1447,16 +1451,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 27, Text 3
@@ -1464,16 +1468,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 28, Text 1
@@ -1481,16 +1485,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 28, Text 2
@@ -1498,16 +1502,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 28, Text 3
@@ -1515,16 +1519,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 29, Text 1
@@ -1532,16 +1536,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 29, Text 2
@@ -1549,16 +1553,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 29, Text 3
@@ -1566,16 +1570,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 30, Text 1
@@ -1583,16 +1587,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 30, Text 2
@@ -1600,16 +1604,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 30, Text 3
@@ -1617,16 +1621,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 31, Text 2
@@ -1634,16 +1638,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 32, Text 2
@@ -1651,16 +1655,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 33, Text 2
@@ -1668,16 +1672,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 34, Text 2
@@ -1685,16 +1689,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 35, Text 2
@@ -1702,16 +1706,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 36, Text 2
@@ -1719,16 +1723,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 37, Text 2
@@ -1736,16 +1740,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 38, Text 2
@@ -1753,16 +1757,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 39, Text 2
@@ -1770,16 +1774,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 40, Text 1
@@ -1787,16 +1791,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 40, Text 2
@@ -1804,16 +1808,16 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss
 - Lesson 40, Text 3
@@ -1821,15 +1825,15 @@ progress: 81 / 4143 tasks complete (~1.9%)
     - [ ] prepare images of Chinese text + English translation for OCR
     - [ ] use OCR on cropped images
     - [ ] proofread OCR results
-    - [ ] transcribe Vocabulary section
+    - [ ] transcribe English definitions in Vocabulary section
     - [ ] transcribe Notes section
     - [ ] proofread
   - format content
     - [ ] create `.passage.md` according to established format ([example](./texts/brandt-ch01-1.passage.md))
     - [ ] create `.vocab.tsv` according to established format ([example](./texts/brandt-ch01-1.vocab.tsv))
   - add content
-    - [ ] get Mandarin pinyin readings for Vocabulary section
-    - [ ] get Vietnamese readings for Vocabulary section
-    - [ ] get Cantonese readings for Vocabulary section
+    - [ ] check/proofread/fill in missing Mandarin pinyin readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Vietnamese readings in `.vocab.tsv`
+    - [ ] check/proofread/fill in missing Cantonese readings in `.vocab.tsv`
     - [ ] align transcribed Chinese + English sentences
     - [ ] write Chinese -> English gloss

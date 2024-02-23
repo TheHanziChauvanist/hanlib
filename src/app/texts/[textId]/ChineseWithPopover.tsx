@@ -7,7 +7,7 @@ import {
 } from "@floating-ui/react";
 import { PassageVocab, VocabEntryPronunciationKey } from "../Passage";
 import { usePopover } from "./Popover";
-import { Suspense, useState } from "react";
+import { useState } from "react";
 import { textIsPunctuation } from "./punctuation";
 import {
   findEntryMatchingEnKeywords,
@@ -162,7 +162,7 @@ function PopoverDictionaryContent(
                           {i < readings.length - 1 ? " / " : " "}
                         </span>
                       ))}
-                    <span className="text-sm">
+                    <span className="">
                       {entry.en
                         ?.split("; ")
                         .map(
