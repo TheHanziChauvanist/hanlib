@@ -19,11 +19,7 @@ export const getPassageVocabFileContents = (textId: string) => {
     ? fs.readFileSync(vocabFilePath, "utf8")
     : null;
 };
-
-export const getPassage = (textId: string) => {
-  const passageFileContents = getPassageFileContents(textId);
-  const passage: Passage = parsePassage(passageFileContents);
-
+export function getPassageVocab(textId: string) {
   const vocabJsonPath = path.resolve(
     process.cwd(),
     "prebuild",
@@ -32,6 +28,14 @@ export const getPassage = (textId: string) => {
   const vocab: PassageVocab = JSON.parse(
     fs.readFileSync(vocabJsonPath, "utf8")
   );
+  return vocab;
+}
+
+export const getPassage = (textId: string) => {
+  const passageFileContents = getPassageFileContents(textId);
+  const passage: Passage = parsePassage(passageFileContents);
+
+  const vocab: PassageVocab = getPassageVocab(textId);
 
   return { text: passage, vocab };
 };
@@ -55,7 +59,21 @@ export function getTextsIdsAndTitles() {
         "utf8"
       );
       const title = parseFrontmatterText(passageFileContents).title;
-      return { textId, title };
+      let firstLine = "";
+      try {
+        firstLine = parsePassage(passageFileContents).lines[0]?.chinese || "";
+      } catch (err) {
+        console.error(`Error parsing passage ${textId}`);
+        console.error(err);
+      }
+      return {
+        textId,
+        title,
+        preview:
+          firstLine.length > 7 ? firstLine.slice(0, 7) + "..." : firstLine,
+      };
     });
   return textIdsAndTitles;
 }
+export const prebuildDirectoryPath = path.join(process.cwd(), "prebuild");
+export const lexiconFilePath = path.join(prebuildDirectoryPath, "lexicon.json");

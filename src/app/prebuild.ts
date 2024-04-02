@@ -21,19 +21,20 @@ import {
   toEnMatchKeyword,
 } from "./lexiconEntryEnKeywords";
 
+import * as qieyun from "qieyun";
+
 // @ts-expect-error no typings
 import unihan from "@silvestre/cjk-unihan";
 import { normalizeText } from "./texts/[textId]/punctuation";
-
-const prebuildDirectoryPath = path.join(process.cwd(), "prebuild");
+import { prebuildDirectoryPath, lexiconFilePath } from "./texts/files";
 
 if (!fs.existsSync(prebuildDirectoryPath)) {
   fs.mkdirSync(prebuildDirectoryPath);
 }
 
+const lexicon = aggregateVocabulary();
+
 fillInMissingReadingsInTsvs().then(() => {
-  const lexicon = aggregateVocabulary();
-  const lexiconFilePath = path.join(prebuildDirectoryPath, "lexicon.json");
   fs.writeFileSync(lexiconFilePath, JSON.stringify(lexicon, null, 2));
   console.log(`Wrote lexicon to ${lexiconFilePath}`);
   writePassageVocabularyJsons(lexicon);
@@ -73,10 +74,11 @@ async function fillInMissingReadingsInTsvs() {
 
     for (const char of featuredChars) {
       if (
-        !vocab[char] ||
+        !lexicon[char] ||
         vocab[char]?.some((e) => vocabFileColumns.some((k) => !e[k.key]))
       ) {
         const unihanResult = await getUnihan(char);
+        const qieyunResult = qieyun.資料.query字頭(char);
         vocab[char] = (
           vocab[char] || [
             {
@@ -85,41 +87,58 @@ async function fillInMissingReadingsInTsvs() {
               kr: null,
               pinyin: null,
               vi: null,
+              qieyun: null,
             },
           ]
         ).map((e) => ({
           en: e.en || null,
           jyutping:
             e.jyutping ||
-            unihanResult?.kCantonese
-              ?.split(/\s/)
-              .map((r, _, segments) =>
-                segments.length > 1
-                  ? `${convertToneNumbersToSuperscript(r)}?`
-                  : convertToneNumbersToSuperscript(r)
-              )
+            (lexicon[char]
+              ? null
+              : unihanResult?.kCantonese
+                  ?.split(/\s/)
+                  .map((r, _, segments) =>
+                    segments.length > 1
+                      ? `${convertToneNumbersToSuperscript(r)}?`
+                      : convertToneNumbersToSuperscript(r)
+                  )
 
-              .join(", ") ||
+                  .join(", ")) ||
             null,
           pinyin:
             e.pinyin ||
-            getMandarinReadings(char, unihanResult)
-              .map((r, _, segments) => (segments.length > 1 ? `${r}?` : r))
-              .join(", ") ||
+            (lexicon[char]
+              ? null
+              : getMandarinReadings(char, unihanResult)
+                  .map((r, _, segments) => (segments.length > 1 ? `${r}?` : r))
+                  .join(", ")) ||
             null,
           vi:
             e.vi ||
-            unihanResult?.kVietnamese
-              ?.split(/\s/)
-              .map((r, _, segments) => (segments.length > 1 ? `${r}?` : r))
-              .join(", ") ||
+            (lexicon[char]
+              ? null
+              : unihanResult?.kVietnamese
+                  ?.split(/\s/)
+                  .map((r, _, segments) => (segments.length > 1 ? `${r}?` : r))
+                  .join(", ")) ||
             null,
           kr:
             e.kr ||
-            unihanResult?.kHangul
-              ?.split(/\s/)
-              .map((r) => r.split(":")[0])
-              .map((r, _, segments) => (segments.length > 1 ? `${r}?` : r))
+            (lexicon[char]
+              ? null
+              : unihanResult?.kHangul
+                  ?.split(/\s/)
+                  .map((r) => r.split(":")[0])
+                  .map((r, _, segments) => (segments.length > 1 ? `${r}?` : r))
+                  .join(", ")) ||
+            null,
+          qieyun:
+            e.qieyun ||
+            qieyunResult
+              ?.map((r, _, results) =>
+                results.length > 1 ? `${r.音韻地位.描述}?` : r.音韻地位.描述
+              )
               .join(", ") ||
             null,
         }));
@@ -206,11 +225,11 @@ function makeVocabTsvContent(
   vocab: Partial<Record<string, LexiconEntry[]>>
 ): string | NodeJS.ArrayBufferView {
   return [
-    `Traditional\tHanyu Pinyin\tJyutping\tKorean\tVietnamese\tEnglish`,
+    `Traditional\tQieyun\tHanyu Pinyin\tJyutping\tKorean\tVietnamese\tEnglish`,
     ...Object.entries(vocab).flatMap(
       ([char, ee]) =>
         ee?.map((e) =>
-          [char, e.pinyin, e.jyutping, e.kr, e.vi, e.en].join("\t")
+          [char, e.qieyun, e.pinyin, e.jyutping, e.kr, e.vi, e.en].join("\t")
         ) || []
     ),
   ].join("\n");

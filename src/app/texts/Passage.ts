@@ -19,13 +19,15 @@ export type VocabEntryPronunciationKey =
   | "jyutping"
   | "pinyin"
   | "en"
-  | "kr";
+  | "kr"
+  | "qieyun";
 export const vocabFileColumns = [
   { heading: "Vietnamese", key: "vi" },
   { heading: "Jyutping", key: "jyutping" },
   { heading: "English", key: "en" },
   { heading: "Hanyu Pinyin", key: "pinyin" },
   { heading: "Korean", key: "kr" },
+  { heading: "Qieyun", key: "qieyun" },
 ] as const;
 
 export function parsePassageVocabList(
@@ -80,16 +82,21 @@ export function parsePassageVocabList(
 }
 
 export function parsePassage(passageFileContents: string) {
-  const [frontmatterText, body, notesText] =
-    passageFileContents.split(/\s*\n\s*---+\s*\n\s*/);
-  const lines = body.split(/\n\n+/).map((line) => {
-    const [chinese, english, gloss] = line.split("\n");
-    return {
-      chinese,
-      english,
-      gloss: gloss || null,
-    };
-  });
+  const sections = passageFileContents.split(/\n---+\n/);
+  if (sections.length < 2)
+    throw new Error("Invalid passage file " + passageFileContents);
+  const [frontmatterText, body, notesText] = sections;
+  const lines = body
+    .trim()
+    .split(/\n\n+/)
+    .map((line) => {
+      const [chinese, english = "", gloss = ""] = line.split("\n");
+      return {
+        chinese,
+        english,
+        gloss: gloss || null,
+      };
+    });
   const notes: Record<string, string> = {};
   if (notesText) {
     const noteSections = [

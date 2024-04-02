@@ -14,14 +14,24 @@ import {
   toEnMatchKeyword,
 } from "@/app/lexiconEntryEnKeywords";
 import dynamic from "next/dynamic";
+import { GlossDocument, GlossedTermComponent } from "@/app/glossUtils";
 
 const RubyText = dynamic(() => import("./RubyText").then((r) => r.RubyText), {
   ssr: false,
 });
 
+export const LATEST_DISPLAY_OPTIONS_VERSION = 1;
+
 export type DisplayOptions = {
   ruby: null | VocabEntryPronunciationKey;
-  translation: boolean;
+  translation: null | "gloss" | "idiomatic";
+  qieyun?:
+    | "karlgren"
+    | "pan"
+    | "pulleyblank-emc"
+    | "pulleyblank-lmc"
+    | "decorated-onyomi";
+  version: number;
 };
 
 export function ChineseWithPopover({
@@ -29,17 +39,34 @@ export function ChineseWithPopover({
   vocab,
   displayOptions,
   gloss,
+  highlightedCharactersRange,
+  setHighlightedCharactersRange,
+  segmentStartingCharacterIndexInLine,
 }: {
   text: string;
   vocab: PassageVocab;
   displayOptions: DisplayOptions;
-  gloss: string[] | null;
+  gloss: GlossDocument | null;
+  highlightedCharactersRange?: {
+    startCharacterIndex: number;
+    endCharacterIndex: number;
+  } | null;
+  setHighlightedCharactersRange?: (
+    range: { startCharacterIndex: number; endCharacterIndex: number } | null
+  ) => void;
+  segmentStartingCharacterIndexInLine?: number;
 }) {
   const popover = usePopover();
   const [popoverChar, setChar] = useState<string | null>(null);
   const [popoverCharGloss, setCharGloss] = useState<string | null>(null);
 
   let glossedChars = 0;
+
+  const { components: termComponents, indexes: termComponentsIndexes } =
+    gloss?.getTermComponents() || {
+      components: [],
+      indexes: new Map<GlossedTermComponent, number>(),
+    };
 
   return (
     <span className="relative">
@@ -50,26 +77,52 @@ export function ChineseWithPopover({
 
         const id = `text-${char}-${i}`;
 
+        const characterIndexInLine =
+          segmentStartingCharacterIndexInLine != null
+            ? segmentStartingCharacterIndexInLine + glossIndex
+            : null;
+        const characterIsHighlighted =
+          highlightedCharactersRange != null &&
+          characterIndexInLine != null &&
+          characterIndexInLine >=
+            highlightedCharactersRange.startCharacterIndex &&
+          characterIndexInLine <= highlightedCharactersRange.endCharacterIndex;
         const entries = vocab[char];
 
         if (!entries?.length) {
           return (
-            <span key={i} className="font-brush">
+            <span key={i} className={`font-sans `}>
               {char}
             </span>
           );
         }
 
-        const enGloss = gloss?.[glossIndex]?.replace(/_/g, " ") || null;
+        const characterGloss =
+          characterIndexInLine != null
+            ? termComponents?.[characterIndexInLine]
+            : null;
+        const glossLemma = characterGloss?.term.getLemma() || null;
+
+        const highlightRange = characterGloss
+          ? {
+              startCharacterIndex: termComponentsIndexes.get(
+                characterGloss.parent.components[0]
+              )!,
+              endCharacterIndex: termComponentsIndexes.get(
+                characterGloss.parent.components[
+                  characterGloss.parent.components.length - 1
+                ]
+              )!,
+            }
+          : null;
 
         const soleEntry = entries.length === 1 ? entries[0] : null;
-
-        const matchingEntry = enGloss
-          ? findEntryMatchingEnKeywords(entries, [enGloss])
+        const matchingEntry = glossLemma
+          ? findEntryMatchingEnKeywords(entries, [glossLemma])
           : null;
 
         let rubyText: string | null = null;
-        if (displayOptions.ruby === "en") rubyText = enGloss;
+        if (displayOptions.ruby === "en" && glossLemma) rubyText = glossLemma;
         else
           rubyText =
             displayOptions?.ruby &&
@@ -79,11 +132,15 @@ export function ChineseWithPopover({
                 ]
               : null;
 
-        const className = `relative cursor:pointer hover:bg-yellow-400/40`;
+        const className = `relative cursor:pointer hovers:bg-yellow-400/40 ${
+          characterIsHighlighted ? "bg-blue-400/40" : ""
+        }`;
         return (
           <span
             key={i}
-            className="relative cursor:pointer hover:bg-yellow-400/40"
+            className={`relative cursor:pointer hover:bg-yellow-400/40 ${
+              characterIsHighlighted ? "bg-blue-400/40" : ""
+            }`}
             {...popover.getReferenceProps({
               className: `${className} ${
                 popover.refs.domReference.current?.id === id
@@ -93,14 +150,23 @@ export function ChineseWithPopover({
               onClick: (e) => {
                 popover.refs.setReference(e.currentTarget);
                 setChar(char);
-                setCharGloss(enGloss);
+                setCharGloss(glossLemma);
               },
+              onMouseEnter:
+                setHighlightedCharactersRange && highlightRange
+                  ? () => setHighlightedCharactersRange(highlightRange)
+                  : undefined,
             })}
+            onMouseLeave={
+              setHighlightedCharactersRange
+                ? () => setHighlightedCharactersRange?.(null)
+                : undefined
+            }
           >
             <ruby>
               <span className="font-brush">{char}</span>
               <RubyText
-                enGloss={enGloss}
+                enGloss={glossLemma}
                 char={char}
                 soleEntry={soleEntry}
                 matchingEntry={matchingEntry || null}
@@ -111,20 +177,29 @@ export function ChineseWithPopover({
           </span>
         );
       })}
-      {popover.open &&
-        popoverChar &&
-        vocab[popoverChar] &&
-        PopoverDictionaryContent(popover, popoverChar, vocab, popoverCharGloss)}
+      {popover.open && popoverChar && vocab[popoverChar] && (
+        <PopoverDictionaryContent
+          popover={popover}
+          popoverChar={popoverChar}
+          vocab={vocab}
+          enGloss={popoverCharGloss}
+        />
+      )}
     </span>
   );
 }
 
-function PopoverDictionaryContent(
-  popover: ReturnType<typeof usePopover>,
-  popoverChar: string,
-  vocab: PassageVocab,
-  enGloss: string | null
-) {
+function PopoverDictionaryContent({
+  popover,
+  popoverChar,
+  vocab,
+  enGloss,
+}: {
+  popover: ReturnType<typeof usePopover>;
+  popoverChar: string;
+  vocab: PassageVocab;
+  enGloss: string | null;
+}) {
   return (
     <FloatingPortal>
       <FloatingFocusManager context={popover.context} modal={popover.modal}>
